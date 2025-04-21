@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on/off</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript">
+        function light(show) {
+            var pic;
+            if (show == 0) {
+                pic = "./images/bulb_off.gif";
+            }
+            else{
+                pic = "./images/bulb_on.gif";
+            }
+            document.getElementById('bulb').src = pic;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Bulb ON/OFF</h1>
+    <img id="bulb" src="./images/bulb_off.gif" alt="bulb off" width="100px" height="180px">
+    
+    <p>
+    <button type="button" onclick="light(1)"> <i class="fa-solid fa-toggle-on"></i> ON</button>
+    <button type="button" onclick="light(0)"> <i class="fa-solid fa-toggle-off"></i> OFF</button>
+    </p>
+
+
+
+
+</body>
+
+</html>

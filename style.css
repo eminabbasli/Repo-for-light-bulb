@@ -1,0 +1,14 @@
+button{
+    text-shadow: 10px 15px 10px black;
+    
+}
+
+button:hover{
+    background-color: gray ;
+    color: black;
+    transition: 0.5s;
+}
+
+h1{
+    text-shadow: 10px 10px 15px black ;
+}
